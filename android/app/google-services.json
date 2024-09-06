@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582725111313",
+    "project_id": "fir-tutorial-36a5e",
+    "storage_bucket": "fir-tutorial-36a5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582725111313:android:8649a56a277e4d9ec06bb0",
+        "android_client_info": {
+          "package_name": "com.example.wscube_logintutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiP_Z16XTXxD7d6VV55pPcZS_6cpSylvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
