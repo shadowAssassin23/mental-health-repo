@@ -2,14 +2,16 @@ import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:wscube_logintutorial/login_page.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
 
   Platform.isAndroid
       ? await Firebase.initializeApp(
-          options: const FirebaseOptions(
-            apiKey: 'AIzaSyCiP_Z16XTXxD7d6VV55pPcZS_6cpSylvk',
+          options: FirebaseOptions(
+            apiKey: dotenv.env['API_KEY'] ?? '',
             appId: "1:582725111313:android:8649a56a277e4d9ec06bb0",
             messagingSenderId: "582725111313",
             projectId: "fir-tutorial-36a5e",
